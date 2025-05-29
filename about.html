@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Nosotros</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					
+				</a>
+                <img src="images/logo.png" style="width: 7%;" alt="" />
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+							<li class="nav-item active"><a class="nav-link" href="about.html">Nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="PlanEstrategico.html">Plan Estratégico</a></li>
+							<li class="nav-item"><a class="nav-link" href="afiliacion.html">Afiliación</a></li>
+							<li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+							<li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="about.html">Nosotros</a>
+								<a class="dropdown-item" href="junta-directiva.html">Junta Directiva</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="colegios.html">Colegios</a></li>
+						<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+							</div>
+						</li>
+						
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>¿Quiénes Somos?<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>ACOPRISA</h3>
+                    <p class="lead"  style="font-size: 1.5em">Somos una organización con liderazgo regional que representa a los centros educativos privados de la provincia, con el propósito de apoyar, orientar, formar, contribuir al mejoramiento de la calidad educativa y velar por los intereses de la comunidad educativa.</p>
+                    <br/>
+                    <p class="lead">ACOPRISA es el principal órgano representativo de la educación privada en Santiago, brindando apoyo y defensa a los colegios miembros en temas administrativos, legales y académicos. Nuestra asociación fomenta el intercambio de conocimientos, impulsa la innovación educativa y garantiza que los estándares de enseñanza se mantengan en un nivel de excelencia.</p>
+
+                </div>
+            </div><!-- end title -->
+			<div class="row align-items-center">
+				<!-- Columna de texto -->
+				<div class="row align-items-center">
+    <!-- Columna de texto -->
+	<div class="row align-items-center">
+		<!-- Columna de texto -->
+		<div class="col-lg-5 col-md-12">
+			<div class="message-box">
+				<h2 class="text-center">Principios:</h2>
+				<p class="lead">
+					• Preservación de la identidad pedagógica característica de cada una de las IEP asociadas.<br>
+					• Defensa de los intereses pedagógicos, empresariales, económicos y laborales de nuestros asociados ante los organismos de las Administraciones Públicas.<br>
+					• Defensa del derecho de los padres de familia a elegir la educación que deseen para sus hijos y a la institución educativa, pública o privada, que responda a sus principios.<br>
+					• Colaboración con las autoridades del Ministerio de Educación de la República Dominicana, MINERD.
+				</p>
+			</div>
+		</div>
+	
+		<!-- Columna de imagen -->
+		<div class="col-lg-7 col-md-12">
+			<div class="post-media wow fadeIn text-center">
+				<img src="images/about_02.jpg" alt="Principios" class="img-fluid img-rounded" style="width: 100%; max-width: 800px;">
+			</div>
+		</div>
+	</div>
+	
+
+			<!-- Segunda fila opcional con otra imagen -->
+			<div class="row align-items-center mt-4">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="post-media wow fadeIn">
+
+					</div><!-- end media -->
+				</div><!-- end col -->
+			</div><!-- end row -->
+			
+				
+				
+
+              
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div class="hmv-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="inner-hmv">
+						<div class="icon-box-hmv"><i class="flaticon-achievement"></i></div>
+						<h3>Misión</h3>
+						<div class="tr-pa">M</div>
+						<p>Promover y garantizar la calidad educativa en los colegios privados de Santiago, brindando a nuestros afiliados las herramientas y el respaldo necesario para el desarrollo integral de sus comunidades escolares.
+
+                            Ser la principal organización educativa privada de Santiago, impulsando la excelencia académica, el liderazgo docente y la innovación educativa en beneficio de estudiantes, familias y sociedad en general.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="inner-hmv">
+						<div class="icon-box-hmv"><i class="flaticon-eye"></i></div>
+						<h3>Visión</h3>
+						<div class="tr-pa">V</div>
+						<p>Ser la principal organización educativa privada de Santiago, impulsando la excelencia académica, el liderazgo docente y la innovación educativa en beneficio de estudiantes, familias y sociedad en general.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="inner-hmv">
+						<div class="icon-box-hmv"><i class="flaticon-history"></i></div>
+						<h3>Valores</h3>
+						<div class="tr-pa">H</div>
+						<p>Promover y garantizar la calidad educativa en los colegios privados de Santiago, brindando a nuestros afiliados las herramientas y el respaldo necesario para el desarrollo integral de sus comunidades escolares.
+
+Ser la principal organización educativa privada de Santiago, impulsando la excelencia académica, el liderazgo docente y la innovación educativa en beneficio de estudiantes, familias y sociedad en general. 
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+
+  	<div class="parallax section dbcolor">
+	<div class="container">
+		<div class="row logos">
+			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+				<a href=" " target="_blank"><img src="" alt="" class="img-repsonsive"></a>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+				<a href="#"><img src="" alt="" class="img-repsonsive"></a>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+				<a href="https://www.ministeriodeeducacion.gob.do/" target="_blank"><img src="images/logo1.png" alt="" class="img-repsonsive"></a>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+				<a href="#"><img src="images/logo22.png" alt="" class="img-repsonsive"></a>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+				<a href="#"><img src="" alt="" class="img-repsonsive"></a>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+				<a href="#"><img src="" alt="" class="img-repsonsive"></a>
+			</div>
+		</div><!-- end row -->
+	</div><!-- end container -->
+</div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Nosotros</h3>
+                        </div>
+						<p> Somos una organización con liderazgo regional que representa a los centros educativos privados de la provincia, con el propósito de apoyar, orientar, formar, contribuir al mejoramiento de la calidad educativa y velar por los intereses de la comunidad educativa.</p>
+                        <div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/ACOPRISA" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<!-- <li><a href="#"><i class="fa fa-github"></i></a></li> -->
+								<li><a href="https://www.instagram.com/acoprisa_edu" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+							    <li><a href="#"><i class="fa fa-dribbble"></i></a></li> 
+							<!--	<li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+							</ul><!-- end links -->
+						</div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Información</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Principal</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+							<li><a href="about.html">Nosotros</a></li>
+							<li><a href="#">Contactos</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contactos</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">acoprisa2016@g.com</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Todos los derechos reservados. &copy; 2025 <a href="#">ACOPRISA</a>  <a href="https://html.design/"></a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Colegios</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					
+				</a>
+                <img src="images/logo.png" style="width: 7%;" alt="" />
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+     	   <div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="PlanEstrategico.html">Plan Estratégico</a></li>
+							<li class="nav-item"><a class="nav-link" href="afiliacion.html">Afiliación</a></li>
+							<li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+							<li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="about.html">Nosotros</a>
+								<a class="dropdown-item" href="junta-directiva.html">Junta Directiva</a>
+							</div>
+						</li>
+						<li class="nav-item active"><a class="nav-link" href="colegios.html">Colegios</a></li>
+						<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+							</div>
+								
+							</div>
+						</li>
+					
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Colegios<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+  <div class="container">
+    <br>
+  <h2 class="h2 a" align="center"><strong>Colegios Afiliados</strong></h2>
+  </div>
+  <div class="vertical-slider">
+    <div class="slider-content" id="scrollContainer">
+      <ul>
+        <li>• Casa Monstessori</li>
+        <li>• Saint David School</li>
+        <li>• Leonardo Da Vinci</li>
+        <li>• Cerro Alto</li>
+        <li>• Centro Infantil Zumbador</li>
+        <li>• Las Buenas Nuevas</li>
+        <li>• Little Planet</li>
+        <li>• Los Pininos</li>
+        <li>• Sagrado Corazón (más cuota siguiente membresía)</li>
+        <li>• Cepoint</li>
+        <li>• Preescolar Tía Amelia</li>
+        <li>• Colegio La Zurza</li>
+        <li>• Fausto Jiménez</li>
+        <li>• Colegio Mi Bebé</li>
+        <li>• Colegio El Ángel</li>
+        <li>* Padre Emiliano Tardif</li>
+        <li>• Manitas Divertidas</li>
+        <li>• Las Rosas</li>
+        <li>• Oasis Christian School</li>
+        <li>• Bautista de la Gracia</li>
+        <li>• CEQUISA</li>
+        <li>• Centro Pedagógico Exea</li>
+        <li>• Colegio Intelecto</li>
+        <li>• Jardín Infantil Los Colorines</li>
+        <li>• Baldera Gil</li>
+        <li>• San Juan Bautista</li>
+        <li>* Eslabones Universal</li>
+        <li>• Arca de Noé</li>
+        <li>• Tehui</li>
+        <li>• Mamina</li>
+        <li>• Salomé Ureña</li>
+        <li>• Peldaños</li>
+        <li>• Home Bilingual School</li>
+        <li>• My Sweet Home</li>
+        <li>• Caminito de Jesús</li>
+        <li>• Centro Educativo Tía Zuly</li>
+        <li>* Jardín de la infancia Los Girasoles</li>
+        <li>• Colegio La Unión</li>
+        <li>• Hermanas de la Cruz</li>
+        <li>• Uneviano</li>
+        <li>• Mis Pasitos</li>
+        <li>• Nuestra Señora de Fátima</li>
+        <li>• Madre Teresa de Calcula</li>
+        <li>• Evangélico Luz y Vida</li>
+        <li>• Gotitas de Amor</li>
+        <li>• MEDUCA</li>
+        <li>• Capullo</li>
+        <li>• Rayons</li>
+        <li>• CERISA</li>
+        <li>• Centro Cristiano de Ens</li>
+        <li>• Mi Rayito Alegre</li>
+        <li>• CEGES</li>
+        <li>• Adbrincoles Kids Play House <br><span class="note">Fecha de afiliación: marzo 2025</span></li>
+      </ul>
+    </div>
+  
+    <div class="scroll-controls">
+      <button onclick="scrollUp()">▲</button>
+      <button onclick="scrollDown()">▼</button>
+    </div>
+  </div>
+  
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: transparent;
+    font-family: Arial, sans-serif;
+  }
+  
+  .vertical-slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-content {
+    width: 90%; /* Ajusta el ancho para que no ocupe todo el ancho de la pantalla */
+    height: 90%; /* Ajusta la altura para que no ocupe toda la altura de la pantalla */
+    overflow-y: auto;
+    padding: 60px 40px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Añadido borde */
+    border-radius: 10px; /* Borde redondeado */
+  }
+  
+  .slider-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .slider-content li {
+    font-size: 1.5rem; /* tamaño de letra reducido */
+    font-weight: bold;
+    color: #777; /* color gris más suave */
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .note {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #999;
+  }
+  
+  .scroll-controls {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .scroll-controls button {
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #ddd;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .scroll-controls button:hover {
+    background: #bbb;
+  }
+  
+  /* Scroll personalizado en el contenedor */
+  .slider-content::-webkit-scrollbar {
+    width: 12px; /* El grosor del scrollbar */
+  }
+  
+  .slider-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .slider-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  .slider-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  </style>
+  
+  <script>
+  function scrollUp() {
+    const container = document.getElementById('scrollContainer');
+    container.scrollBy({ top: -100, behavior: 'smooth' });
+  }
+  
+  function scrollDown() {
+    const container = document.getElementById('scrollContainer');
+    container.scrollBy({ top: 100, behavior: 'smooth' });
+  }
+  </script>
+  
+  
+  
+  
+  
+  
+  
+    
+
+                        
+                        
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo1.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo22.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="" alt="" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Nosotros</h3>
+                        </div>
+				               	<p> Somos una organización con liderazgo regional que representa a los centros educativos privados de la provincia, con el propósito de apoyar, orientar, formar, contribuir al mejoramiento de la calidad educativa y velar por los intereses de la comunidad educativa.</p>
+                        <div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Información</h3>
+                        </div>
+                       <ul class="footer-links">
+						          <li><a href="#">Principal</a></li>
+						         <li><a href="blog.html">Blog</a></li>
+						         <li><a href="about.html">Nosotros</a></li>
+					         	<li><a href="#">Contactos</a></li>
+					        </ul><!-- end links -->
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contactos</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">acoprisa2016@g.com</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">Todos los derechos reservados. &copy; 2025 <a href="#">ACOPRISA</a>  <a href="https://html.design/"></a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
